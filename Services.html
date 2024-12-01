@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+  </head>
+  <body>
+    <section class="Services-header">
+      <nav class="navbar">
+        <a class="brand" href="">
+          <span style="font-weight: bolder; color: purple">crespo</span>Tek</a
+        >
+
+        <ul class="navbarlinks" id="navbarlinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="services-content">
+        <h1 style="font-size: 35px; color: white; text-align: center">
+          Services
+        </h1>
+      </div>
+    </section>
+    <!-----services------>
+    <section class="Services">
+      <h2>Available</h2>
+      <p>We offer the following;</p>
+      <div class="row">
+        <div class="col">
+          <h3 style="color: yellow; font-weight: bolder">Graphic Design</h3>
+          <p>We create Visual content</p>
+          <img src="Images/pexels-designecologist-1779487.jpg" alt="" />
+        </div>
+        <div class="col">
+          <h3 style="color: blue">Web Design</h3>
+          <p>beautifully designed websites</p>
+          <img src="Images/pexels-xexusdesigner-777001.jpg" alt="" />
+        </div>
+        <div class="col">
+          <h3 style="color: red">Web Development</h3>
+          <p>We build fully responsive websites</p>
+          <img src="Images/pexels-pixabay-270632.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+    <section class="footer">
+      <p>
+        Made with
+        <i style="color: red; font-size: 10px" class="fa fa-heart"></i> by
+        &copy;crespoTek
+      </p>
+    </section>
+    <script>
+      var navbarlinks = document.getElementById("navbarlinks");
+
+      function showMenu() {
+        navbarlinks.style.right = "0";
+      }
+      function hideMenu() {
+        navbarlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

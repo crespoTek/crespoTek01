@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+  </head>
+  <body>
+    <section class="About-header">
+      <nav class="navbar">
+        <a class="brand" href="">
+          <span style="font-weight: bolder; color: purple">crespo</span>Tek</a
+        >
+
+        <ul class="navbarlinks" id="navbarlinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1 style="font-size: 35px; color: purple">About</h1>
+    </section>
+    <!--about content-->
+    <section class="About-content">
+      <h2
+        style="
+          color: white;
+          font-size: 25px;
+          text-align: center;
+          padding-top: 50px;
+        "
+      >
+        Building Brands
+      </h2>
+      <p style="text-align: center; color: red">
+        The purpose of our lives is to express our gifts.
+      </p>
+      <div class="row">
+        <div style="text-align: center" class="col">
+          <div class="img">
+            <img
+              style="width: 200px; border-radius: 50%"
+              src="Images/Profilepic.jpg"
+              alt=""
+            />
+          </div>
+          <p>Kingdom come</p>
+        </div>
+        <div style="text-align: center" class="col">
+          <h3>About Me</h3>
+          <p>
+            Am a professional graduate of Business and Management who took a
+            keen interest in IT and has been sharpening my skills in software
+            development. I build websites using HTML,CSS,Bootstrap,Tailwind and
+            Javascript programming Language.
+          </p>
+          <h3>Mission</h3>
+          <p>
+            We provide solutions in Graphic Design, Web Design and Web
+            Development
+          </p>
+          <h3>Vision</h3>
+          <p>To help build Brands.</p>
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+    <section class="footer">
+      <p>
+        Made with
+        <i style="color: red; font-size: 10px" class="fa fa-heart"></i> by
+        &copy;crespoTek
+      </p>
+    </section>
+    <script>
+      var navbarlinks = document.getElementById("navbarlinks");
+
+      function showMenu() {
+        navbarlinks.style.right = "0";
+      }
+      function hideMenu() {
+        navbarlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

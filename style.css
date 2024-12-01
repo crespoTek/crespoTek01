@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: o;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.header {
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.navbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  color: red;
+  font-size: 40px;
+  padding: 30px;
+}
+.navbar ul {
+  display: flex;
+  padding: 20px;
+  list-style: none;
+}
+.navbar ul li {
+  padding: 5px;
+}
+.navbar ul li a {
+  color: purple;
+  font-size: 30px;
+}
+.navbar ul li a:hover {
+  color: red;
+}
+.header-content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  flex-direction: column;
+  gap: 20px;
+}
+.btn {
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.btn:hover {
+  background-color: red;
+  color: purple;
+}
+.fa {
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+.navbar .fa {
+  display: none;
+}
+@media (max-width: 735px) {
+  .navbarlinks {
+    top: 0;
+    right: -200px;
+    width: 200px;
+    position: fixed;
+    height: 100vh;
+    text-align: left;
+    z-index: 2;
+    background: red;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar ul li a {
+    color: white;
+  }
+  .navbar ul li a:hover {
+    color: purple;
+  }
+  h1 {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  .navbar .fa {
+    display: inline-block;
+  }
+  .navbar ul li {
+    padding: 20px;
+  }
+}
+
+/*----services---*/
+.Services {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+h2 {
+  color: purple;
+  font-size: 50px;
+}
+
+.Services .row {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding-top: 50px;
+}
+.Services .col {
+  flex-basis: 30%;
+  border-radius: 1px solid black;
+  border-radius: 5px;
+}
+.col img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+@media (max-width: 735px) {
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    padding: 10px;
+  }
+}
+/*--foter---*/
+.footer {
+  background-color: black;
+  color: white;
+  margin-top: 100px;
+}
+.footer p {
+  text-align: center;
+  padding: 50px;
+}
+
+/*-----About-header--*/
+.About-header {
+  height: 40vh;
+}
+.About-header h1 {
+  text-align: center;
+}
+.About-content {
+  height: 60vh;
+  background-color: purple;
+  color: white;
+}
+.About-content .row {
+  display: flex;
+  padding-top: 50px;
+}
+.About-content .col {
+  flex-direction: column;
+  flex-basis: 45%;
+}
+@media (max-width: 735px) {
+  .About-content .row {
+    flex-direction: column;
+  }
+  .About-header .fa-bars {
+    color: purple;
+  }
+  .About-content {
+    height: 100%;
+  }
+}
+/*----Services page--*/
+.Services-header {
+  height: 30vh;
+  background-color: blue;
+}
+.Services-content h1 {
+  text-align: center;
+}
+/*-----contact---*/
+.contact-header {
+  background-color: grey;
+  height: 30vh;
+}
+.contact-header-content {
+  text-align: center;
+}
+.location {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+.location iframe {
+  width: 100%;
+}
+.contact-us .row {
+  display: flex;
+}
+.contact-us .col {
+  flex-basis: 48%;
+  text-align: center;
+}
+
+.contact-us .col input,
+.contact-us .col textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+}
